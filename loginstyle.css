@@ -248,11 +248,14 @@ form{
 .input-field #id_password{
   width: 80%;
 }
-#togglePassword{
+/* #togglePassword{
  margin-left:  18vw;
   margin-top: -8vh;
+} */
+.toggleicon{
+  margin-top: -8.75vh;
+  margin-left: 220px;
 }
-
 .required:after {
   content:" *";
   color: red;
