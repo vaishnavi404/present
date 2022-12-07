@@ -11,7 +11,7 @@
   width: 0px;
 }
 body{
-  overflow: hidden;
+  overflow: hidden scroll;
 }
 
 .header{
@@ -29,6 +29,7 @@ body{
   border: 1px solid black;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .logo img {
   height: 40px;
@@ -315,6 +316,7 @@ flex-direction: column;
   width: calc(100% - 20vw);
   transition: all 0.5s ease;
   padding: 1%;
+  overflow: hidden scroll;
 }
 .sidebar.close ~ .home-section{
   left: 6vw;
