@@ -368,46 +368,74 @@ flex-direction: column;
     width: calc(100% -6vw);
   }
 }
-
-.bodyManageRole{
+.full{
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.bodycol{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  width: 92.3vw;
-  height: 82vh;
+  
+}
+.A{
+  margin-top: 40px;
+}
+.bodyManageRole{
+
+ 
+  /* width: 92.3vw;
+  height: 82vh; */
   background-color: #ffffff;
 }
-#bodyColumn1{
+#bodycol1{
   display: flex;
   flex-direction: column;
   padding: 20px;
   background-color: white;
   width: 35vw;
-  margin-right: 7px;
+  height: 65vh;
+  transform: translateY(-10%);
+  box-shadow: 2px 2px 10px gray;
+}
+#bodycol2{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  width: 35vw;
   height: 65vh;
   transform: translateY(-10%);
   box-shadow: 2px 2px 10px gray;
 }
 
-.selectForRoleManagement select{
+.selectForRoleManagement select, input{
   height: 40px;
   border: 2px solid #808191;
-  margin: px;
+  /* margin: px; */
+}
+.selectForRoleManagement input::placeholder{
+  color: #1876b1;
+  font-size:small
 }
 
-.selectForRoleManagement select:optional{
+
+.selectForRoleManagement select:optional {
 color: #1876b1;
 font-size:small
 }
 .selectForRoleManagement{
   display: flex;
   flex-direction: column;
-  margin: 10px;
+ 
+  text-decoration: none;
   color: #1876b1;
 }
 
-.bodyManageRole button{
+.bodyManageRole {
   width: 100px;
   height: 40px;
   padding: 2px 5px;
@@ -421,7 +449,21 @@ font-size:small
   border-radius: 10px;
   box-shadow: 2px 2px 10px grey;
 }
-.bodyManageRole button:hover{
+ button:hover{
   cursor: pointer;
   background-color: #075585;
+}
+
+.filter-btn{
+width: 100%;
+height: 30px;
+background-color: #1876b1;
+color: white;
+border: none;
+border-radius: 10px;
+box-shadow: 2px 2px 10px grey;
+padding: 2px 5px;
+}
+.filter-btn:active{
+  background-color: #11101D;
 }
