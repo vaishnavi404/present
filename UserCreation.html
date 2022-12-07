@@ -16,6 +16,7 @@
         <div class="logo"><img src="images/logo.png" alt="logo"></div>
         <div class="connectToDb"><a href="login.html"><b>Sign out</b></a></div>
     </div>
+
     <div class="sidebar close">
 
         <ul class="nav-links">
@@ -54,14 +55,14 @@
             </li>
 
             <li>
-  
+
                 <div class="profile-details">
                     <a href="login.html"><i class='bx bx-log-out'></i></a>
                     <div class="name-job">
 
                         <div class="profile_name">UserID:*****</div>
                         <div class="role">admin</div>
-                        <div class="changep"><a href="changepassword.html">Change password</a></div>
+                        <div class="changep role"><a href="changepassword.html">Change password</a></div>
                     </div>
 
                 </div>
@@ -76,145 +77,155 @@
         </div>
 
         <div class="NewUser">
-            <div class="input-field"> <label class='required'>Name:</label> 
-                <input type="text" id='Name' placeholder="Name" /></div>
-            <div class="input-field"> <label class='required'>User ID:</label> 
-                 <input type="text" id='UserID' placeholder="User Id" /></div>
+            <div class="input-field"> <label class='required'>Name:</label>
+                <input type="text" id='Name' placeholder="Name" />
+            </div>
+            <div class="input-field"> <label class='required'>User ID:</label>
+                <input type="text" id='UserID' placeholder="User Id" />
+            </div>
             <div class="input-field"> <label class='required' for="AssignRole">Assign Role: </label>
                 <select name="Role" id="role">
-                  <option value="a">Select Role</option>
-                  <option value="b">b</option>
-                  <option value="c">c</option>
-                  <option value="d">d</option>
-                  <option value="e">e</option>
-                  <option value="f">f</option>
-                  <option value="g">g</option>
-                  <option value="h">h</option>
+                    <!-- <option value="a">Select Role</option> -->
+                    <!-- <option value=" " onclick=''>Create new role</option> -->
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                    <option value="e">e</option>
+                    <option value="f">f</option>
+                    <option value="g">g</option>
+                    <option value="h">h</option>
                 </select>
                 <!-- <input type="submit" value="Submit" /> -->
-               </div>
+                <!-- <a href="managerole.html">Create new role&nbsp;<i class='bx bx-plus'></i></a> -->
+            </div>
+
             <div class="input-field"><label class='required'>Email ID:</label>
-                 <input id="email"type='email'placeholder= "Email" /></div>
+                <input id="email" type='email' placeholder="Email" />
+            </div>
             <div class="input-field grid-item-special"><label class='required'> Remark:</label>
-                <input id='remark' type="text" placeholder="remark" /></div>
-           
+                <input id='remark' type="text" placeholder="remark" />
+            </div>
+
         </div>
 
         <div class="middlebar">
-            <div class="search"> <input type="text"  rel= "search" placeholder="search" />
+            <div class="search"> <input type="text" rel="search" placeholder="search" />
                 <button type="">Search</i></button>
             </div>
             <div class="button">
-                <button id="save"   class="mbtn" type="submit">Save</button>
-                
-                <button id="reset" class="mbtn"type="reset">Reset</button>
-                
-                <button id="modify"class="mbtn" type="button">Modify</button>
-                
+                <button id="save" class="mbtn" type="submit">Save</button>
+
+                <button id="reset" class="mbtn" type="reset">Reset</button>
+
+                <button id="modify" class="mbtn" type="button">Modify</button>
+
                 <button id="discard" class="mbtn" type="button">Discard</button>
             </div>
         </div>
         <div class="table">
-       <table class="content-table">
-        <thead>
-            <tr>
-                <th>Sr No</th>
-                <th>User ID</th>
-                <th>Name</th>
-                <th>Email ID</th>
-                <th>Maker remark</th>
-                <th>Maker Id</th>
-                <th>Make date</th>
-                <th>Role</th>
-                <th>checkbox</th>
-                
-            
-            </tr>
-        </thead> 
-            <tr>
-                <td>1</td>
-                <td>123456</td>
-                <td>Xyz</td>
-                <td>xyz@email.com</td>
-                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
-                <td>9999999</td>
-                <td>20-11-2022</td>
-                <td>a</td>
-                <td><input type="checkbox" name="" id=""></td>
-             
-            </tr>
-               
-                
-            <tr>
-                <td>1</td>
-                <td>123456</td>
-                <td>Xyz</td>
-                <td>xyz@email.com</td>
-                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
-                <td>9999999</td>
-                <td>20-11-2022</td>
-                <td>b</td>
-                <td><input type="checkbox" name="" id=""></td>
-             
-            </tr>
-            <tr >
-                <td>1</td>
-                <td>123456</td>
-                <td>Xyz</td>
-                <td>xyz@email.com</td>
-                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
-                <td>9999999</td>
-                <td>20-11-2022</td>
-                <td>c</td>
-                <td><input type="checkbox" name="" id=""></td>
-             
-            </tr>
-            <tr >
-                <td>1</td>
-                <td>123456</td>
-                <td>Xyz</td>
-                <td>xyz@email.com</td>
-                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
-                <td>9999999</td>
-                <td>20-11-2022</td>
-                <td>c</td>
-                <td><input type="checkbox" name="" id=""></td>
-             
-            </tr>
-            <tr >
-                <td>1</td>
-                <td>123456</td>
-                <td>Xyz</td>
-                <td>xyz@email.com</td>
-                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
-                <td>9999999</td>
-                <td>20-11-2022</td>
-                <td>E</td>
-                <td><input type="checkbox" name="" id=""></td>
-                
-             
-            </tr>
-            <!-- <tr >
-                <th>2</th>
-                <th>123456</th>
-                <th>xyz</th>
-                <th>xyz@email.com</th>
-                <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, libero!</th>
-                <th>99999999</th>
-                <th>20-11-2022</th>
-                <th><input type="checkbox" name="" id=""></th>
-             
-            </tr> -->
-        </tbody>
-       </table>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email ID</th>
+                        <th>Maker remark</th>
+                        <th>Maker Id</th>
+                        <th>Make date</th>
+                        <th>Role</th>
+                        <th>checkbox</th>
+
+
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>123456</td>
+                    <td>Xyz</td>
+                    <td>xyz@email.com</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
+                    <td>9999999</td>
+                    <td>20-11-2022</td>
+                    <td>a</td>
+                    <td><input type="checkbox" name="" id=""></td>
+
+                </tr>
+
+
+                <tr>
+                    <td>1</td>
+                    <td>123456</td>
+                    <td>Xyz</td>
+                    <td>xyz@email.com</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
+                    <td>9999999</td>
+                    <td>20-11-2022</td>
+                    <td>b</td>
+                    <td><input type="checkbox" name="" id=""></td>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>123456</td>
+                    <td>Xyz</td>
+                    <td>xyz@email.com</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
+                    <td>9999999</td>
+                    <td>20-11-2022</td>
+                    <td>c</td>
+                    <td><input type="checkbox" name="" id=""></td>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>123456</td>
+                    <td>Xyz</td>
+                    <td>xyz@email.com</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
+                    <td>9999999</td>
+                    <td>20-11-2022</td>
+                    <td>c</td>
+                    <td><input type="checkbox" name="" id=""></td>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>123456</td>
+                    <td>Xyz</td>
+                    <td>xyz@email.com</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
+                    <td>9999999</td>
+                    <td>20-11-2022</td>
+                    <td>E</td>
+                    <td><input type="checkbox" name="" id=""></td>
+
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>123456</td>
+                    <td>Xyz</td>
+                    <td>xyz@email.com</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae.</td>
+                    <td>9999999</td>
+                    <td>20-11-2022</td>
+                    <td>E</td>
+                    <td><input type="checkbox" name="" id=""></td>
+
+
+                </tr>
+
+                </tbody>
+            </table>
         </div>
         <div class="lower">
-            <button class="mbtn"  id="sendtoauth" type="button">send to author</button>
+            <button class="mbtn" id="sendtoauth" type="button">send to author</button>
         </div>
-      
+
     </section>
 
     <script src="script.js"></script>
+
 
 </body>
 
